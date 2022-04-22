@@ -5,8 +5,20 @@ def sumar_algo(*args):
     return= resultado
     '''
     resultado=0
-    print(type(args))
+
+    for n in args:
+        resultado=resultado+n
+    return resultado
+
+def mayor(*args):
+    '''
+    Esta funcion identifica el mayor de los numeros ingresados en un arreglo
+    :param args:
+    :return: Integer
+    '''
+    mayor=max(args)
+    return mayor
 
 
-    sumar_algo(4,5,6,7)
+
 
