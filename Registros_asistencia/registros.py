@@ -59,10 +59,8 @@ def hablar(mensaje):
 
 
 
-
-
 #Crear base de datos
-ruta="Empleados"
+ruta="Registros_asistencia\Empleados"
 mis_imagenes=[]
 nombres_empleados=[]
 lista_de_empleados=os.listdir(ruta)
@@ -92,7 +90,7 @@ def codificar(imagenes):
     return lista_codificada
 
 def registrar_ingresos(persona):
-    f = open('registro.csv', 'r+')
+    f = open('Registros_asistencia\\registro.csv', 'r+')
     hora = datetime.now()
     lista_datos = f.readlines()
     nombres_registro = []
@@ -108,7 +106,7 @@ def registrar_ingresos(persona):
         saludo_inicial(persona)
 
     elif persona in nombres_registro and 18 <= hora.hour < 6 :
-        f2 = open('salida.csv', 'r+')
+        f2 = open('Registros_asistencia\salida.csv', 'r+')
         ahora = datetime.now()
         string_ahora = ahora.strftime('%H:%M:%S')
         f2.writelines(f'\n{persona}, {string_ahora}')

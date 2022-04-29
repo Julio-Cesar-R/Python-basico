@@ -22,6 +22,7 @@ def get_producto(product_name):
 @app.route("/productos",methods=['POST'])#Ingresa informacion a la base
 def agregar_productos():
     nuevo_producto={
+            "id":request.json["id"],
            "name": request.json["name"],
             "price":request.json["price"],
             "quantity":request.json["quantity"]
