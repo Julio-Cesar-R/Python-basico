@@ -1,3 +1,14 @@
+#Tuplas en py
+tuplas=(1,2,5,"Hola")
+print(type(tuplas))
+print(tuplas)
+#La tupla es inmutable
+elemento=tuplas[0]
+print(elemento)
+print(tuplas[1:3])
+
+#No se pueden modificar
+
 mi_tuple=(1,2,(23,45),4)
 print(mi_tuple[3])
 print(mi_tuple[2][1])

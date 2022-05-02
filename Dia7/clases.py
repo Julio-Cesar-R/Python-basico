@@ -24,3 +24,4 @@ class PlataformaStreaming:
 netflix=PlataformaStreaming()
 hbo_max=PlataformaStreaming()
 amazon_prime_video=PlataformaStreaming()
+
