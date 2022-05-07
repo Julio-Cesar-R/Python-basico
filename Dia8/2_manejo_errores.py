@@ -1,4 +1,5 @@
 #Buscar la lista de excepciones de todos los tipos distintos
+
 '''def suma():
     num1=int(input("ingresa el primer numero"))
     num2=int(input("ingresa el segundo numero"))
