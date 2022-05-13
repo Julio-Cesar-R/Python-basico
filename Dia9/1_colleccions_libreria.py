@@ -2,7 +2,7 @@
 La libreria collections ya esta incluida al instalar python
 -estructuras de datos
 '''
-from collections import Counter,defaultdict,namedtuple # contador dentro de un diccionario
+from collections import Counter,defaultdict,namedtuple# contador dentro de un diccionario
 lista=[1,1,1,1,2,3,4,5,5,5,6,6,7,7,7,8,8,8]
 dic=Counter(lista)#Muestra el numero de veces que se repite cada numero en la lista
 print(type (lista))
