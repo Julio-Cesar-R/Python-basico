@@ -3,7 +3,7 @@ mitexto="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 print(mitexto[0:10])
 
 frase = "Controlar la complejidad es la esencia de la programación"
-print(frase[0:9])
+print(frase[0:12])
 
 frase = "Nunca confíes en un ordenador que no puedas lanzar por una ventana"
 print(frase[8::3])

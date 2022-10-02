@@ -13,6 +13,7 @@ B="Merol"
 C="es"
 D="cultura"
 E=" ".join([A,B,C,D])# une una cadena de caracteres de una lista
+print(type(E))
 print(E)
 
 res=texto.find("a") #encuentra la posicion dentro de la cadena
