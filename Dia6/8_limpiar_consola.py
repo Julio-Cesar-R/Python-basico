@@ -13,5 +13,3 @@ if desicion == "S":
     system("shutdown /s")  # Comando para apagar la pc
 else:
     print("Se ha cancelado el apagado")
-
-arra = ["algo", "algo1", "Algo2"]
