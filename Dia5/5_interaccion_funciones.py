@@ -1,6 +1,6 @@
-
 from random import *
-'''
+
+"""
 palitos=["-","--","---","----"]
 
 def mezclar(lista):
@@ -27,29 +27,33 @@ intento= intento()
 resultado= chequeo(lista,intento)
 print(resultado)
 print(lista)
-'''
-#////////////////////////////////////////////////////////////////
+"""
+# ////////////////////////////////////////////////////////////////
 
-def lanzar_dados ():
-    random1=randint(1,6)
-    random2=randint(1,6)
-    return random1,random2
 
-def evaluar_jugada(n1,n2):
-    suma_dados=int(n1+n2)
-    if suma_dados<=6:
+def lanzar_dados():
+    random1 = randint(1, 6)
+    random2 = randint(1, 6)
+    return random1, random2
+
+
+def evaluar_jugada(n1, n2):
+    suma_dados = int(n1 + n2)
+    if suma_dados <= 6:
         return f"la suma de tus dados es {suma_dados}. Lamentable"
-    elif suma_dados>6 and suma_dados<10:
+    elif suma_dados > 6 and suma_dados < 10:
         return f"la suma de tus dados es {suma_dados}. Tienes buenas chances"
 
     else:
         return f"la suma de tus dados es {suma_dados}. Parece una jugada ganadora"
 
-res1,res2=lanzar_dados()
-res3=evaluar_jugada(res1,res2)
+
+res1, res2 = lanzar_dados()
+res3 = evaluar_jugada(res1, res2)
 
 
-lista_numeros = [1,2,15,7,2,8]
+lista_numeros = [1, 2, 15, 7, 2, 8]
+
 
 def reducir_lista(lista):
     lista = list(set(lista))
@@ -57,23 +61,23 @@ def reducir_lista(lista):
     lista.pop(-1)
     return lista
 
+
 def promedio(lista):
-    valor_medio = sum(lista)/len(lista)
+    valor_medio = sum(lista) / len(lista)
     return valor_medio
 
 
+lista_numeros = [1, 2, 15, 7, 2, 8]
 
-
-
-lista_numeros = [1,2,15,7,2,8]
- 
 import random
- 
+
+
 def lanzar_moneda():
-    resultado=""
+    resultado = ""
     resultado = random.choice(["Cara", "Cruz"])
     return resultado
- 
+
+
 def probar_suerte(moneda, lista):
     if moneda == "Cara":
         print("La lista se autodestruirá")
@@ -82,6 +86,7 @@ def probar_suerte(moneda, lista):
         print("La lista fue salvada")
         return lista
 
-lanzamiento1=lanzar_moneda()
-res=probar_suerte(lanzamiento1,lista_numeros)
+
+lanzamiento1 = lanzar_moneda()
+res = probar_suerte(lanzamiento1, lista_numeros)
 print(res)

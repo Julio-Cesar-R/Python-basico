@@ -1,21 +1,27 @@
-#Funciones lambda (funciones anonimas (calculo interno dentro de otra funcion))
+# Funciones lambda (funciones anonimas (calculo interno dentro de otra funcion))
 
-lista=[1,2,3,4,5,6]
+lista = [1, 2, 3, 4, 5, 6]
+
+
 def par(numero):
-    if numero %2==0:
+    if numero % 2 == 0:
         return f"Numero {numero} es par"
     else:
         return f"Numero {numero} es impar"
+
+
 for n in lista:
-    res=par(n)
+    res = par(n)
     print(res)
 
-#Funciones lambda
-'''def pares(numero):
+# Funciones lambda
+"""def pares(numero):
     resultado=(numero%2)==0
     return resultado
-'''
-filtro=filter(lambda numero:numero%2==0,lista) #compara una lista con una funcion lambda
+"""
+filtro = filter(
+    lambda numero: numero % 2 == 0, lista
+)  # compara una lista con una funcion lambda
 print(type(filtro))
-pares=list(filtro)
+pares = list(filtro)
 print(pares)

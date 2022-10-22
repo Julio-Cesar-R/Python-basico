@@ -1,26 +1,27 @@
 import pandas as pd
+
 # Creamos una serie de números y hallamos su media
-numeros=pd.Series([1,2,65,78,54,89,444])
-#print(numeros.mean())
+numeros = pd.Series([1, 2, 65, 78, 54, 89, 444])
+# print(numeros.mean())
 
 # Hallamos la suma de dichos números
-#print(numeros.sum())
+# print(numeros.sum())
 
 # Creamos una SERIE de tres colores diferentes
-colores=pd.Series(["Rojo","Amarillo","Verde"])
-#print(colores)
+colores = pd.Series(["Rojo", "Amarillo", "Verde"])
+# print(colores)
 
-#Creamos una serie con tipos de autos, y la visualizamos
-tipos_autos=pd.Series(["Sedan","Sv","Pickup"])
-#print(tipos_autos)
+# Creamos una serie con tipos de autos, y la visualizamos
+tipos_autos = pd.Series(["Sedan", "Sv", "Pickup"])
+# print(tipos_autos)
 
 # Combinamos las series de tipos de autos y colores en un DATAFRAME
-autos=pd.DataFrame({"Tipos de autos":tipos_autos,"Colores":colores})
-#print(autos)
+autos = pd.DataFrame({"Tipos de autos": tipos_autos, "Colores": colores})
+# print(autos)
 
 
-#/////////////////////////////////////////
-ventas_autos=pd.read_csv("ventas-autos.csv")
+# /////////////////////////////////////////
+ventas_autos = pd.read_csv("ventas-autos.csv")
 print(ventas_autos)
 
 # Exportar el Dataframe como un archivo CSV a mi carpeta "/content/drive/MyDrive/Colab Notebooks/pruebas/"
@@ -48,7 +49,7 @@ print(ventas_autos.tail())
 print(ventas_autos.loc[3])
 
 # Utilizamos .iloc para seleccionar las filas 3, 7 y 9
-print(ventas_autos.iloc[[3,7,9]])
+print(ventas_autos.iloc[[3, 7, 9]])
 
 # Seleccionar la columna "Kilometraje"
 print(ventas_autos["Kilometraje"])
@@ -57,11 +58,11 @@ print(ventas_autos["Kilometraje"])
 print(ventas_autos["Kilometraje"].mean())
 
 # Seleccionar aquellas columnas que tengan valores superiores a 100,000 kilómetros en la columna Kilometraje
-print(ventas_autos[ventas_autos["Kilometraje"]>100000])
+print(ventas_autos[ventas_autos["Kilometraje"] > 100000])
 
 # Creamos una tabla cruzada de doble entrada entre Fabricante y cantidad de puertas
-print(pd.crosstab(ventas_autos["Fabricante"],ventas_autos["Puertas"]))
+print(pd.crosstab(ventas_autos["Fabricante"], ventas_autos["Puertas"]))
 
 # Agrupamos las columnas por fabricante y buscandos el valor medio de las columnas numéricas
 print(ventas_autos.groupby(["Fabricante"]).mean())
-#//////////////////////////////////////////////////////////////////
+# //////////////////////////////////////////////////////////////////

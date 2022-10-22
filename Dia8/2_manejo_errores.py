@@ -1,6 +1,6 @@
-#Buscar la lista de excepciones de todos los tipos distintos
+# Buscar la lista de excepciones de todos los tipos distintos
 
-'''def suma():
+"""def suma():
     num1=int(input("ingresa el primer numero"))
     num2=int(input("ingresa el segundo numero"))
     print(f"El resultado de la suma = "+3)
@@ -20,20 +20,22 @@ else :
     print("Hiciste todo bien")
 finally:
     #el codigo que se va a ejecutar de todas formas
-    print("eso es todo")'''
+    print("eso es todo")"""
+
 
 def numero():
     while True:
         try:
-            numero=int(input("ingresa un numero"))
+            numero = int(input("ingresa un numero"))
         except:
             print("ese no es un numero")
         else:
             print("todo salio bien")
-            break#Termina el ciclo
+            break  # Termina el ciclo
+
 
 numero()
-#//////////////////////////////////////////////////////////////////////////////
+# //////////////////////////////////////////////////////////////////////////////
 def suma(num1, num2):
     try:
         print(num1 + num2)

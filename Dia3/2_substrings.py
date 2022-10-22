@@ -1,5 +1,5 @@
 # Se almacenaran caracteres pertenecientes a una cadena dentro de una variable
-mitexto="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+mitexto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 print(mitexto[0:10])
 
 frase = "Controlar la complejidad es la esencia de la programación"

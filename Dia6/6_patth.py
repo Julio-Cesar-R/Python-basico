@@ -1,5 +1,6 @@
 from pathlib import Path
-'''
+
+"""
 base=Path.home()
 print(base)#directorio principal de la computadora
 guia=Path("barcelona","sagrada_familia.txt")#crea directorios
@@ -19,20 +20,23 @@ directorio=Path("C:/Users/julio/OneDrive/Documentos/Cesar/Curso python Docs/Día
 for txt in Path(directorio).glob("**/*.txt"):#busqueda de archivos en carpetas con un * //busca manera global **/*
     print(txt)
 print("\n")
-'''
+"""
 
-guia3=Path("Europa","España","Barcelona","Sagrada_Familia.txt")
-en_europa=guia3.relative_to(Path("Europa"))#coincidencias en los directorios
-en_espania=guia3.relative_to(Path("Europa","España"))
+guia3 = Path("Europa", "España", "Barcelona", "Sagrada_Familia.txt")
+en_europa = guia3.relative_to(Path("Europa"))  # coincidencias en los directorios
+en_espania = guia3.relative_to(Path("Europa", "España"))
 
 print(en_europa)
 print(en_espania)
-#/////////////////////////////////////////////////////////
+# /////////////////////////////////////////////////////////
 from pathlib import Path
-ruta_base=Path.home()
+
+ruta_base = Path.home()
 
 from pathlib import Path
-ruta=Path("Curso Python/Día 6/practicas_path.py")
+
+ruta = Path("Curso Python/Día 6/practicas_path.py")
 
 from pathlib import Path
-ruta=Path(Path.home(),"Curso Python/Día 6/practicas_path.py")
+
+ruta = Path(Path.home(), "Curso Python/Día 6/practicas_path.py")

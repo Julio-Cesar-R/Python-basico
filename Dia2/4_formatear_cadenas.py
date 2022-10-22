@@ -1,12 +1,12 @@
-A="julio"
-B=33
+A = "julio"
+B = 33
 
 print(f"tu nombre es {A} y tu edad es {B}")
-print("tu nombre es {} y tu edad {}".format(A,B))
+print("tu nombre es {} y tu edad {}".format(A, B))
 
-n1=3
-n2=39
-print("la suma de {} y {} es {}".format(n1,n2,n1+n2))
+n1 = 3
+n2 = 39
+print("la suma de {} y {} es {}".format(n1, n2, n1 + n2))
 print(f"la suma de {n1} y {n2} es {n1+n2}")
 
 nombre_asociado = "Jesse Pinkman"
@@ -19,4 +19,6 @@ print(f"Has ganado {puntos_nuevos} puntos! En total, acumulas {puntos_totales} p
 
 puntos_anteriores = 875
 puntos_nuevos = 350
-print(f"Has ganado {puntos_nuevos} puntos! En total, acumulas {puntos_anteriores+puntos_nuevos} puntos")
+print(
+    f"Has ganado {puntos_nuevos} puntos! En total, acumulas {puntos_anteriores+puntos_nuevos} puntos"
+)

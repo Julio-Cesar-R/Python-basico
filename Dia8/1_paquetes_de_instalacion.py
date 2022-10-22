@@ -1,4 +1,4 @@
-'''
+"""
 Paso1 definir que funcion quieres realizar
 paso2 hacer la busqueda en google de preferencia en ingles, pagina recomendada "https://pypi.org/"
 paso3 verificar la documentacion y el metodo de instalacion y como se declara en python
@@ -15,5 +15,4 @@ CIENCIA DE DATOS PACKAGE
 
 MACHINE LEARNING
 scikit-learn
-'''
-
+"""
